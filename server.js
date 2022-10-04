@@ -5,6 +5,7 @@ require('dotenv').config();
 const port = 8088;
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(__dirname + '/public'));
 //app.set('view engine', 'ejs')
 
 app.get("/", (req, res) => {
