@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 
-const port = process.env.PORT || 8888;
+const port = 80;
 
 app.use(express.urlencoded({ extended: true }));
 //app.set('view engine', 'ejs')
