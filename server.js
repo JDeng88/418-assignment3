@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 app.post("/add", (req, res) => {
     res.json({
-        "sum": res.body.num1 + res.body.num2
+        "sum": req.body.num1 + req.body.num2
     })
 })
 
