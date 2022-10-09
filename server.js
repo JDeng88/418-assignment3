@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
     res.render('index.ejs');
 })
 
-app.get("/add", (req, res) => {
+app.post("/add", (req, res) => {
     res.json({
         "sum": res.body.num1 + res.body.num2
     })
